@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="style.css">
+<body bgcolor="black">
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <div class="main">
+  <div class="logo">
+    <img src="logo01.jpg">
+  </div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index2.html">Near You</a></li>
+  <li><a href="#products">Products</a></li>
+  <li><a href="#account" >Account</a></li>
+  <li><a href="#contact" >Contact</a></li>
+  <li><a href="#settings">Settings</a></li>
+</ul>
+</div>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="001.jpg"
+  style="width:100%">
+  <img class="mySlides" src="002.jpg"
+  style="width:100%">
+  <img class="mySlides" src="003.jpg"
+  style="width:100%">
+</section>
+
+<!-- Description -->
+<section class="w3-container w3-center w3-content" id="description-section">
+  <h2 class="w3-wide">STYLE ME</h2>
+  <p class="w3-opacity"><i>[Digital Salon/Parlor For Men & Women]</i></p>
+  <p class="w3-justify"><b>This is a platform for every men and women of every age to get our sevices. We provide special home services and we will also giving you the best salon or parlour near you. Our work is to  help you to make your life more easier. We also have various kind of products and many offerrs for you guys.THANK YOU.</b></p>
+  <h1 class="tittle">PRODUCTS</h1>
+</section>
+
+<!-- Products -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p><b>Fogg Perfume</b></p>
+    <img src="01.jpg" alt="Random Name" style="width:100%">
+    <p><b>BDT: 650/-TK Only</b></p>
+  </article>
+  <article class="w3-third">
+    <p><b>GATSBY Hair Gel For Men</b></p>
+    <img src="02.jpg" alt="Random Name" style="width:100%">
+    <p><b>BDT: 350/-TK Only</b></p>
+  </article>
+  <article class="w3-third">
+    <p><b>Vaseline Lotion</b></p>
+    <img src="03.jpg" alt="Random Name" style="width:100%">
+    <p><b>BDT: 550/-TK Only</b></p>
+  
+  </article>
+</section>
+<div class="boxed"><a style="text-decoration:none" href="mailto:help@styleme.com">E-mail:help@styleme.com</a><br><a style="text-decoration:none" target="_blank" href="/privacy.pdf">Privacy Policy</a></div>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+</body>
+</html>

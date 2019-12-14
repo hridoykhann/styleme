@@ -1,0 +1,28 @@
+ul{
+    float: right;
+    list-style-type: none;
+    mar
+}
+ul li{
+    display: inline-block;
+
+}
+ul li a{
+    text-decoration: none;
+    color: red;
+    padding: 5px 20px;
+    border: 2px solid grey;
+}
+
+ul li a:hover{
+    background-color: grey;
+}
+.logo img {
+    float: left;
+    width: 250px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
